@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Portfolio from "./Portfolio";
+import MareaProject from "./MareaProject";
+import DreamsyncProject from "./DreamsyncProject";
+import RootProject from "./RootProject";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/marea" element={<MareaProject />} />
+        <Route path="/dreamsync" element={<DreamsyncProject />} />
+        <Route path="/root" element={<RootProject />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
