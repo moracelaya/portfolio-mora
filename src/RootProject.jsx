@@ -36,8 +36,8 @@ export default function RootProject() {
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
             <p style={LABEL_STYLE}>About the project</p>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>La digitalización y la IA han puesto fin a la era de la educación finita. Actualmente, el aprendizaje ya no es un paso previo al trabajo, sino un proceso permanente y obligatorio para mantener la relevancia profesional.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Para las personas, el Lifelong Learning ha pasado de ser un concepto teórico a una estrategia de supervivencia necesaria para cerrar la brecha de habilidades en un entorno laboral híbrido y altamente exigente.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>Digitalization and AI have put an end to the era of finite education. Today, learning is no longer a preliminary step before work — it's a permanent and obligatory process to maintain professional relevance.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>For individuals, Lifelong Learning has evolved from a theoretical concept into a necessary survival strategy to close the skills gap in a hybrid and highly demanding work environment.</p>
             </div>
           </div>
         </section>
@@ -62,13 +62,13 @@ export default function RootProject() {
         <section style={{ padding: sectionPad }}>
           <h2 style={{ ...TITLE_STYLE, fontSize: titleSize }}>THE PROBLEM</h2>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-            <p style={LABEL_STYLE}>Intención vs. Gestión Real</p>
+            <p style={LABEL_STYLE}>Intention vs. Actual Management</p>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 32px" }}>Existe una desconexión crítica entre la alta motivación de los profesionales y su capacidad para ejecutar un aprendizaje sostenible.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 32px" }}>There is a critical disconnect between professionals' high motivation and their ability to execute sustainable learning.</p>
               {[
-                { label: "Autogestión", text: "Falta de herramientas de autogestión del tiempo." },
-                { label: "Soledad y autosabotaje", text: "Sentimiento de soledad y autosabotaje." },
-                { label: "Oferta rígida", text: "Una oferta educativa tradicional demasiado rígida y teórica para las necesidades prácticas e inmediatas del mercado." },
+                { label: "Self-management", text: "Lack of time self-management tools." },
+                { label: "Loneliness and self-sabotage", text: "A feeling of loneliness and self-sabotage." },
+                { label: "Rigid supply", text: "A traditional educational offering that is too rigid and theoretical for the immediate and practical needs of the market." },
               ].map((item) => (
                 <div key={item.label} style={{ borderTop: "0.25px solid #ccc", paddingTop: "20px", paddingBottom: "20px", display: "flex", flexDirection: isMobile ? "column" : "row", gap: isMobile ? "8px" : "32px" }}>
                   <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0, width: isMobile ? "100%" : "200px", flexShrink: 0, fontWeight: 500, color: "#000" }}>{item.label}</p>
@@ -84,16 +84,16 @@ export default function RootProject() {
         <section style={{ padding: sectionPad, backgroundColor: "#f5f5f5" }}>
           <h2 style={{ ...TITLE_STYLE, fontSize: titleSize, color: "#000" }}>USER PERSONA</h2>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-            <p style={LABEL_STYLE}>La Estratega y La Aprendiz Permanente</p>
+            <p style={LABEL_STYLE}>The Strategist and The Lifelong Learner</p>
             <div>
               {[
-                { name: "Carmela", title: "La Estratega", desc: "Representa a quienes aprenden por necesidad laboral en situaciones de alta incertidumbre.", reto: "Necesita resultados rápidos y una red de apoyo para combatir el desamparo y la ansiedad." },
-                { name: "Fiorella", title: "La Aprendiz Permanente", desc: "Representa a quienes aprenden por placer o crecimiento personal en situaciones estables.", reto: "Su mayor desafío es la constancia. Teme que su curiosidad se disipe por falta de disciplina." }
+                { name: "Carmela", title: "The Strategist", desc: "Represents those who learn out of professional necessity in situations of high uncertainty.", reto: "She needs quick results and a support network to combat helplessness and anxiety." },
+                { name: "Fiorella", title: "The Lifelong Learner", desc: "Represents those who learn for pleasure or personal growth in stable situations.", reto: "Her biggest challenge is consistency. She fears her curiosity will fade due to lack of discipline." }
               ].map((p, i) => (
                 <div key={p.name} style={{ borderTop: i === 0 ? "none" : "0.25px solid #ccc", paddingTop: "28px", paddingBottom: "28px" }}>
                   <h3 style={{ fontSize: bodySize, fontWeight: 400, margin: "0 0 4px", color: "#000" }}>{p.name} — {p.title}</h3>
                   <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>{p.desc}</p>
-                  <p style={{ fontSize: "15px", lineHeight: "1.5", color: "#888", margin: 0, fontStyle: "italic" }}>Su reto: {p.reto}</p>
+                  <p style={{ fontSize: "15px", lineHeight: "1.5", color: "#888", margin: 0, fontStyle: "italic" }}>Her challenge: {p.reto}</p>
                 </div>
               ))}
             </div>
@@ -114,8 +114,8 @@ export default function RootProject() {
         <section style={{ padding: sectionPad }}>
           <h2 style={{ ...TITLE_STYLE, fontSize: titleSize, lineHeight: 1 }}>THE OPPORTUNITY</h2>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-            <p style={LABEL_STYLE}>Personalización del Aprendizaje</p>
-            <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Queremos ayudar a las personas a organizar su curiosidad para que aprender sea lo más accesible, eficiente y motivador posible. Mediante herramientas de microaprendizaje, planificación visual e Inteligencia Artificial.</p>
+            <p style={LABEL_STYLE}>Learning Personalization</p>
+            <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>We want to help people organize their curiosity so that learning is as accessible, efficient, and motivating as possible — through microlearning tools, visual planning, and Artificial Intelligence.</p>
           </div>
         </section>
       </FadeInSection>
@@ -148,9 +148,9 @@ export default function RootProject() {
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
             <h2 style={{ fontSize: titleSize, fontWeight: 400, textTransform: "uppercase", margin: 0, color: "#000", letterSpacing: "-0.02em", lineHeight: 1 }}>THE SOLUTION</h2>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>Nuestra propuesta consiste en crear rutas de aprendizaje personalizadas, con contenido curado, que se adaptan a tu tiempo, estructuran tu progreso y mantienen tu motivación paso a paso.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>No queremos añadir presión, sino darle sentido al esfuerzo.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Nuestra meta es transformar la ansiedad del "no llego" en calma. Queremos que el aprendizaje deje de ser una carga y vuelva a ser una motivación.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>Our proposal is to create personalized learning paths, with curated content, that adapt to your time, structure your progress, and keep your motivation step by step.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>We don't want to add pressure, but to give meaning to the effort.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Our goal is to transform the anxiety of "I can't keep up" into calm. We want learning to stop being a burden and become a motivation again.</p>
             </div>
           </div>
         </section>

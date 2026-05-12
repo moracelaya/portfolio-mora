@@ -40,9 +40,9 @@ export default function DreamsyncProject() {
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
             <p style={LABEL_STYLE}>About the project</p>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>Cada noche soñamos. Creamos escenas, emociones y narrativas complejas. Pero al despertar, casi todo desaparece.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>Lo que experimentamos durante horas queda reducido a fragmentos difusos: difíciles de recordar, imposibles de compartir.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Hoy, no existe una forma de registrar o explorar los sueños de manera objetiva.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>Every night we dream. We create scenes, emotions, and complex narratives. But upon waking, almost everything disappears.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>What we experience for hours is reduced to vague fragments: difficult to remember, impossible to share.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Today, there is no objective way to record or explore dreams.</p>
             </div>
           </div>
         </section>
@@ -64,19 +64,19 @@ export default function DreamsyncProject() {
         <section style={{ padding: sectionPad }}>
           <h2 style={{ ...TITLE_STYLE, fontSize: titleSize }}>THE PROBLEM</h2>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-            <p style={{ ...LABEL_STYLE, lineHeight: "18px" }}>Los sueños contienen información valiosa, pero presentan tres grandes limitaciones:</p>
+            <p style={{ ...LABEL_STYLE, lineHeight: "18px" }}>Dreams contain valuable information, but they present three major limitations:</p>
             <div>
               {[
-                { label: "Efímeros", text: "Se desvanecen rápidamente y no pueden ser recuperados con precisión." },
-                { label: "Intransferibles", text: "No existe una forma de comunicarlos sin perder su complejidad." },
-                { label: "Subjetivos", text: "Su interpretación depende completamente de cada persona." },
+                { label: "Ephemeral", text: "They fade quickly and cannot be retrieved with precision." },
+                { label: "Untransferable", text: "There is no way to communicate them without losing their complexity." },
+                { label: "Subjective", text: "Their interpretation depends entirely on each person." },
               ].map((item) => (
                 <div key={item.label} style={{ borderTop: "0.25px solid #ccc", paddingTop: "20px", paddingBottom: "20px", display: "flex", flexDirection: isMobile ? "column" : "row", gap: isMobile ? "8px" : "32px" }}>
                   <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0, width: isMobile ? "100%" : "180px", flexShrink: 0, fontWeight: 500, color: "#000" }}>{item.label}</p>
                   <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>{item.text}</p>
                 </div>
               ))}
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "20px 0 0" }}>Esto limita su potencial.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "20px 0 0" }}>This limits their potential.</p>
             </div>
           </div>
         </section>
@@ -94,11 +94,11 @@ export default function DreamsyncProject() {
         <section style={{ padding: sectionPad, backgroundColor: "#f5f5f5" }}>
           <h2 style={{ ...TITLE_STYLE, fontSize: titleSize, color: "#000" }}>USER PERSONA</h2>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-            <p style={{ ...LABEL_STYLE, lineHeight: "18px" }}>DreamSync nace para dos perfiles, con un mismo interés: el mundo onírico.</p>
+            <p style={{ ...LABEL_STYLE, lineHeight: "18px" }}>DreamSync is built for two profiles, sharing one common interest: the world of dreams.</p>
             <div>
               {[
-                { title: "La Exploradora Creativa", desc: "Busca transformar sus sueños en algo tangible.", quote: "Mis sueños son materia prima, solo necesito una forma de traerlos al mundo." },
-                { title: "El Investigador de la Mente", desc: "Busca comprender y analizar lo que sucede durante el sueño.", quote: "Entender cómo soñamos es el primer paso para entender quiénes somos." }
+                { title: "The Creative Explorer", desc: "Seeks to transform her dreams into something tangible.", quote: "My dreams are raw material, I just need a way to bring them into the world." },
+                { title: "The Mind Researcher", desc: "Seeks to understand and analyze what happens during sleep.", quote: "Understanding how we dream is the first step to understanding who we are." }
               ].map((p, i) => (
                 <div key={p.title} style={{ borderTop: i === 0 ? "none" : "0.25px solid #ccc", paddingTop: "28px", paddingBottom: "28px" }}>
                   <h3 style={{ fontSize: bodySize, fontWeight: 400, margin: "0 0 16px", color: "#000" }}>{p.title}</h3>
@@ -115,8 +115,8 @@ export default function DreamsyncProject() {
         <section style={{ padding: sectionPad }}>
           <h2 style={{ ...TITLE_STYLE, fontSize: titleSize, lineHeight: 1 }}>THE OPPORTUNITY</h2>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-            <p style={LABEL_STYLE}>¿Cómo diseñar una herramienta que permita explorar los sueños?</p>
-            <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Existe una oportunidad en crear un sistema que traduzca la actividad cerebral en una interfaz visual interpretable.</p>
+            <p style={LABEL_STYLE}>How do we design a tool that allows dreams to be explored?</p>
+            <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>There is an opportunity to create a system that translates brain activity into an interpretable visual interface.</p>
           </div>
         </section>
       </FadeInSection>
@@ -135,8 +135,8 @@ export default function DreamsyncProject() {
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
             <h2 style={{ fontSize: titleSize, fontWeight: 400, textTransform: "uppercase", margin: 0, color: "#000", letterSpacing: "-0.02em", lineHeight: 1 }}>THE SOLUTION</h2>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>DreamSync es una plataforma que registra, decodifica y traduce la actividad cerebral durante el sueño en representaciones visuales reproducibles.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Un puente entre neurociencia, inteligencia artificial y exploración interior.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>DreamSync is a platform that records, decodes, and translates brain activity during sleep into reproducible visual representations.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>A bridge between neuroscience, artificial intelligence, and inner exploration.</p>
             </div>
           </div>
         </section>
@@ -147,8 +147,8 @@ export default function DreamsyncProject() {
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
             <p style={LABEL_STYLE}>Conclusion</p>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>DreamSync no busca solo mostrar sueños.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Propone una nueva forma de observar la mente humana.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>DreamSync doesn't just aim to show dreams.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>It proposes a new way of observing the human mind.</p>
             </div>
           </div>
         </section>

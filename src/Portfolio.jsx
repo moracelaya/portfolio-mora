@@ -11,10 +11,10 @@ const PROJECTS = [
 ];
 
 const SERVICES = [
-  { number: "1.", title: "PRODUCT DESIGN", description: "Diseño experiencias digitales desde la idea hasta la solución final. Trabajo enfocándome en el usuario, la claridad y la funcionalidad.", tags: ["UX/UI", "FLUJOS", "WIREFRAMES", "PROTOTIPOS"] },
-  { number: "2.", title: "UX & RESEARCH", description: "Analizo problemas, comportamientos y necesidades reales para tomar decisiones de diseño con sentido.", tags: ["RESEARCH", "BENCHMARK", "DEFINICIÓN DE PROBLEMAS", "INSIGHTS"] },
-  { number: "3.", title: "VISUAL & BRANDING", description: "Desarrollo sistemas visuales y piezas digitales que acompañan la experiencia y refuerzan la identidad.", tags: ["BRANDING", "DISEÑO VISUAL", "ASSETS DIGITALES"] },
-  { number: "4.", title: "ESTRATEGIA & CONCEPTO", description: "Defino el enfoque detrás de cada proyecto: qué problema se está resolviendo y por qué esa es la mejor solución.", tags: ["CONCEPTO", "ESTRATEGIA DE PRODUCTO", "NARRATIVA"] },
+  { number: "1.", title: "PRODUCT DESIGN", description: "I design digital experiences from concept to final solution. I work with a focus on the user, clarity, and functionality.", tags: ["UX/UI", "FLOWS", "WIREFRAMES", "PROTOTYPES"] },
+  { number: "2.", title: "UX & RESEARCH", description: "I analyze real problems, behaviors, and needs to make design decisions that make sense.", tags: ["RESEARCH", "BENCHMARK", "PROBLEM DEFINITION", "INSIGHTS"] },
+  { number: "3.", title: "VISUAL & BRANDING", description: "I develop visual systems and digital pieces that enhance the experience and reinforce the identity.", tags: ["BRANDING", "VISUAL DESIGN", "DIGITAL ASSETS"] },
+  { number: "4.", title: "STRATEGY & CONCEPT", description: "I define the approach behind each project: what problem is being solved and why that's the best solution.", tags: ["CONCEPT", "PRODUCT STRATEGY", "NARRATIVE"] },
 ];
 
 const ABOUT_IMAGES = [
@@ -159,10 +159,10 @@ export default function Portfolio() {
             <h2 style={{ fontSize: isMobile ? "32px" : "40px", fontWeight: 400, textTransform: "uppercase", margin: 0, color: "#000" }}>About Me</h2>
           </div>
           <div style={{ flex: 1, minWidth: 0, paddingRight: isMobile ? "0" : "420px" }}>
-            <p style={{ fontSize: isMobile ? "16px" : "20px", fontWeight: 400, lineHeight: "1.5", margin: "0 0 20px", color: "#000" }}>Soy Mora, diseñadora gráfica y de producto, de Buenos Aires, Argentina.</p>
-            <p style={{ fontSize: isMobile ? "16px" : "20px", fontWeight: 400, lineHeight: "1.5", margin: "0 0 20px", color: "#000" }}>Siempre me interesó mirar lo cotidiano: cómo las personas se organizan, cómo resuelven cosas simples y qué pasa en esas pequeñas frustraciones del día a día que muchas veces pasan desapercibidas.</p>
-            <p style={{ fontSize: isMobile ? "16px" : "20px", fontWeight: 400, lineHeight: "1.5", margin: "0 0 20px", color: "#000" }}>Ahí es donde encuentro sentido en el diseño. Me interesa pensar soluciones que no solo funcionen a nivel visual, sino que realmente sean útiles, claras y hagan la vida un poco más simple.</p>
-            <p style={{ fontSize: isMobile ? "16px" : "20px", fontWeight: 400, lineHeight: "1.5", margin: 0, color: "#000" }}>Busco seguir creciendo en proyectos donde el diseño tenga un impacto real y cercano, y donde pueda aportar no solo desde lo estético, sino también desde la forma de pensar y resolver problemas.</p>
+            <p style={{ fontSize: isMobile ? "16px" : "20px", fontWeight: 400, lineHeight: "1.5", margin: "0 0 20px", color: "#000" }}>I'm Mora, a graphic and product designer from Buenos Aires, Argentina.</p>
+            <p style={{ fontSize: isMobile ? "16px" : "20px", fontWeight: 400, lineHeight: "1.5", margin: "0 0 20px", color: "#000" }}>I've always been interested in observing everyday life: how people organize themselves, how they solve simple things, and what happens in those small daily frustrations that often go unnoticed.</p>
+            <p style={{ fontSize: isMobile ? "16px" : "20px", fontWeight: 400, lineHeight: "1.5", margin: "0 0 20px", color: "#000" }}>That's where I find meaning in design. I'm interested in thinking through solutions that not only work visually, but are truly useful, clear, and make life a little simpler.</p>
+            <p style={{ fontSize: isMobile ? "16px" : "20px", fontWeight: 400, lineHeight: "1.5", margin: 0, color: "#000" }}>I aim to keep growing in projects where design has a real and meaningful impact, where I can contribute not just aesthetically, but also through the way I think and solve problems.</p>
           </div>
         </div>
         {!isMobile && <StackedImages />}

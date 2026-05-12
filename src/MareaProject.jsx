@@ -36,9 +36,9 @@ export default function MareaProject() {
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
             <p style={LABEL_STYLE}>About the project</p>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>Marea es una aplicación que propone una nueva forma de organizar el día: en lugar de basarse únicamente en el tiempo disponible, introduce una variable clave que suele ignorarse: la energía.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>Si los usuarios pueden registrar fácilmente su nivel de energía y reciben sugerencias adaptadas, podrán planificar de forma más realista y reducir la frustración asociada a la productividad.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Marea busca alinear lo que hacemos con cómo nos sentimos.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>Marea is an app that proposes a new way to organize the day: instead of relying solely on available time, it introduces a key variable that is often overlooked: energy.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>If users can easily log their energy level and receive tailored suggestions, they'll be able to plan more realistically and reduce the frustration associated with productivity.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Marea seeks to align what we do with how we feel.</p>
             </div>
           </div>
         </section>
@@ -54,12 +54,12 @@ export default function MareaProject() {
         <section style={{ padding: sectionPad }}>
           <h2 style={{ ...TITLE_STYLE, fontSize: titleSize }}>THE PROBLEM</h2>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-            <p style={{ ...LABEL_STYLE, lineHeight: "18px" }}>Planificar sin considerar la energía genera un desajuste constante.</p>
+            <p style={{ ...LABEL_STYLE, lineHeight: "18px" }}>Planning without considering energy creates a constant mismatch.</p>
             <div>
               {[
-                { label: "Expectativas irreales", text: "Se planifican tareas sin considerar el estado real del día." },
-                { label: "Sensación de improductividad", text: "No cumplir con lo planificado se percibe como fracaso." },
-                { label: "Cansancio y frustración", text: "Se fuerza el rendimiento incluso cuando no hay recursos energéticos." },
+                { label: "Unrealistic expectations", text: "Tasks are planned without considering the real state of the day." },
+                { label: "Feeling of unproductivity", text: "Not meeting plans is perceived as failure." },
+                { label: "Fatigue and frustration", text: "Performance is forced even when there are no energy resources." },
               ].map((item) => (
                 <div key={item.label} style={{ borderTop: "0.25px solid #ccc", paddingTop: "20px", paddingBottom: "20px", display: "flex", flexDirection: isMobile ? "column" : "row", gap: isMobile ? "8px" : "32px" }}>
                   <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0, width: isMobile ? "100%" : "220px", flexShrink: 0, fontWeight: 500, color: "#000" }}>{item.label}</p>
@@ -90,11 +90,11 @@ export default function MareaProject() {
         <section style={{ padding: sectionPad, backgroundColor: "#f5f5f5" }}>
           <h2 style={{ ...TITLE_STYLE, fontSize: titleSize, color: "#000" }}>USER PERSONA</h2>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-            <p style={{ ...LABEL_STYLE, lineHeight: "18px" }}>Marea está pensada para personas con alta autoexigencia y rutinas estructuradas.</p>
+            <p style={{ ...LABEL_STYLE, lineHeight: "18px" }}>Marea is designed for people with high self-demand and structured routines.</p>
             <div style={{ paddingBottom: "28px" }}>
-              <h3 style={{ fontSize: bodySize, fontWeight: 400, margin: "0 0 16px", color: "#000" }}>El profesional digital / creativo</h3>
+              <h3 style={{ fontSize: bodySize, fontWeight: 400, margin: "0 0 16px", color: "#000" }}>The digital / creative professional</h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                {["Trabaja con tareas que requieren foco mental","Tiene agendas cargadas y objetivos exigentes","Siente frustración cuando no rinde como espera","Busca formas más sostenibles de organizarse"].map((t) => (
+                {["Works on tasks that require mental focus","Has busy schedules and demanding goals","Feels frustrated when performance doesn't meet expectations","Seeks more sustainable ways to stay organized"].map((t) => (
                   <p key={t} style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>{t}</p>
                 ))}
               </div>
@@ -107,10 +107,10 @@ export default function MareaProject() {
         <section style={{ padding: sectionPad }}>
           <h2 style={{ ...TITLE_STYLE, fontSize: titleSize, lineHeight: 1 }}>THE OPPORTUNITY</h2>
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
-            <p style={LABEL_STYLE}>Conectar dos mundos que hoy están separados.</p>
+            <p style={LABEL_STYLE}>Connecting two worlds that are currently separate.</p>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>Muchas aplicaciones permiten registrar estados de ánimo o energía. Pero pocas ayudan a tomar decisiones a partir de esa información.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Existe una oportunidad en conectar cómo me siento con qué tengo que hacer.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 20px" }}>Many apps allow users to log moods or energy levels. But few help make decisions based on that information.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>There's an opportunity in connecting how I feel with what I need to do.</p>
             </div>
           </div>
         </section>
@@ -129,9 +129,9 @@ export default function MareaProject() {
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
             <h2 style={{ fontSize: titleSize, fontWeight: 400, textTransform: "uppercase", margin: 0, color: "#000", letterSpacing: "-0.02em", lineHeight: 1 }}>THE SOLUTION</h2>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>Marea es una app que ayuda a organizar la agenda en función de la energía real del usuario.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>No se trata de hacer más, sino de hacer mejor.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>La app permite registrar el estado energético y adaptar las tareas para lograr una planificación más realista y sostenible.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>Marea is an app that helps organize your schedule based on the user's actual energy.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>It's not about doing more, but doing better.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>The app allows you to log your energy state and adapt tasks to achieve more realistic and sustainable planning.</p>
             </div>
           </div>
         </section>
@@ -142,8 +142,8 @@ export default function MareaProject() {
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "24px" }}>
             <p style={LABEL_STYLE}>Conclusion</p>
             <div>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>Marea no busca optimizar el tiempo.</p>
-              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>Busca redefinir la productividad desde un lugar más humano.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: "0 0 16px" }}>Marea doesn't seek to optimize time.</p>
+              <p style={{ ...BODY_STYLE, fontSize: bodySize, margin: 0 }}>It seeks to redefine productivity from a more human perspective.</p>
             </div>
           </div>
         </section>
